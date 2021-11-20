@@ -41,10 +41,12 @@
           // document.write();
           console.log('Okay...');
         }
+        url.temp = null
       }
       
       if (url && url.code.length) {
-        
+        document.body.innerHTML = 'http://git.io/' + url.code;
+      }
       
       // ✓ \\
       
