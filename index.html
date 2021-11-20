@@ -2,7 +2,52 @@
 <html>
   <head>
     <script>
-      window.location.href = 'https://github.com/dacuteraccoon/'
+      
+      // ✓ \\
+      
+      var url = {
+        code: location.search.split('url=')[1],
+        isCode: undefined,
+        temp: null
+      }
+      
+      if (url.code = null) {
+        url.isCode = false;
+      } else if (url.code == undefined) {
+        url.isCode = false;
+      } else if (url.code == '') {
+        url.isCode = false;
+      } else if (url.code == "") {
+        url.isCode = false;
+      } else if (url.code == ' ') {
+        url.isCode = false;
+      } else if (url.code == " ") {
+        url.isCode = false;
+      } else if (url.code == NaN) {
+        url.isCode = false;
+      } else if (url.code == true) {
+        url.isCode = false;
+      } else if (url.code == false) {
+        url.isCode = false;
+      } else {
+        url.isCode = true;
+      }
+      
+      if (url.isCode == false) {
+        url.temp = window.confirm('Continue to github.com/DaCuteRaccoon?');
+        if (url.temp == true) {
+          window.location.href = 'https://github.com/DaCuteRaccoon'
+        } else {
+          // document.write();
+          console.log('Okay...');
+        }
+      }
+      
+      if (url && url.code.length) {
+        
+      
+      // ✓ \\
+      
     </script>
   </head>
 </html>
